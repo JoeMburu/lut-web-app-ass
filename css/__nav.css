@@ -1,0 +1,146 @@
+.nav {
+	width: 95%;
+	height: 7rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid red;
+}
+
+.menu__indicator {
+	flex: 0 0 6rem;
+	/* border: 1px solid #000;   Testing */
+	height: 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bar:nth-child(2) {
+	width: 45%;
+}
+
+.bar {
+	height: 2px;
+	width: 60%;
+	margin: 2.5px 0;
+	background: #000;
+	cursor: pointer;
+	transition: all 1s ease-out;
+}
+
+.menu__indicator-toggle {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.position__absolute-bars {
+	position: absolute;
+}
+
+.bar__first-child {
+	transform: rotate(45deg);
+	transition: all 1s ease-out;	
+}
+
+.bar__second-child {
+	display: none;
+	transition: all 1s ease-out;		
+}
+
+.bar__third-child {
+	transform: rotate(-45deg);
+	transition: all 1s ease-out;	
+}
+
+
+.logo {
+	flex: 0 0 60%;
+	height: 5rem;
+	/* border: 1px solid blue; */
+	display: flex;
+	align-items: center;
+}
+
+.logo__text {
+	display: block;
+	width: 100%;
+	display: block;	
+}
+
+.cart__container {
+	flex: 0 0 7rem;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.cart__container span {
+	display: none;
+	justify-content: center;
+	position: relative;
+}
+
+.cart {
+	width: 55%;
+	height: 55%;
+}
+
+.cart__counter {
+	width: 18px;
+	height: 18px;
+	background: #000;
+	border-radius: 50%;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -4px;
+	right: -2px;
+	font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) { 
+	.logo {
+		flex: 0 0 50%;
+		height: 4rem;		
+	}
+
+	.logo__text {
+		height: auto;
+	}
+
+}
+
+
+@media only screen and (min-width: 1025Px) { 
+	
+	.cart__container {
+		align-items: center;
+	}
+
+	.cart {
+		display: none;
+	}
+
+	.cart__counter {
+		position: relative;
+	}
+
+	.cart__counter {
+		top: 0;
+		right: 0;
+		margin-left: 1rem;
+	}
+
+	
+	
+
+}
+
