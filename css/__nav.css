@@ -5,29 +5,28 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid red;
+	margin-top: 0.3rem;
 }
 
 .menu__indicator {
-	flex: 0 0 6rem;
-	/* border: 1px solid #000;   Testing */
-	height: 6rem;
+	flex: 0 0 10%;
+	height: 3.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.bar:nth-child(2) {
-	width: 45%;
-}
-
 .bar {
 	height: 2px;
-	width: 60%;
+	width: 2.5rem;
 	margin: 2.5px 0;
 	background: #000;
 	cursor: pointer;
 	transition: all 1s ease-out;
+}
+
+.bar:nth-child(2) {
+	width: 1.8rem;
 }
 
 .menu__indicator-toggle {
@@ -36,7 +35,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .position__absolute-bars {
@@ -61,23 +59,31 @@
 
 .logo {
 	flex: 0 0 60%;
-	height: 5rem;
-	/* border: 1px solid blue; */
+	height: 4rem;
+	/*border: 1px solid blue;  Testing*/
 	display: flex;
+	justify-content: center;
 	align-items: center;
+	 
 }
 
 .logo__text {
-	display: block;
-	width: 100%;
-	display: block;	
+	display: inline-block;
+	height: 80%;	
 }
 
 .cart__container {
-	flex: 0 0 7rem;
+	flex: 0 0 10%;
+	height: 3.5rem;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	position: relative;
+}
+
+.cart {
+	width: 3rem;
+	height: 3rem;
 }
 
 .cart__container span {
@@ -86,14 +92,9 @@
 	position: relative;
 }
 
-.cart {
-	width: 55%;
-	height: 55%;
-}
-
 .cart__counter {
-	width: 18px;
-	height: 18px;
+	width: 15px;
+	height: 15px;
 	background: #000;
 	border-radius: 50%;
 	color: #fff;
@@ -101,46 +102,46 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: -4px;
-	right: -2px;
+	top: -5px;
+	right: 1%;
 	font-size: 10px;
 }
 
 @media only screen and (min-width: 768px) { 
-	.logo {
-		flex: 0 0 50%;
-		height: 4rem;		
+	.cart__counter {
+		right: 20%;
+		font-size: 10px;
 	}
-
-	.logo__text {
-		height: auto;
-	}
-
 }
 
 
-@media only screen and (min-width: 1025Px) { 
+@media only screen and (min-width: 1025px) { 
 	
-	.cart__container {
-		align-items: center;
-	}
-
 	.cart {
 		display: none;
 	}
 
-	.cart__counter {
-		position: relative;
+	.cart__container span {
+		display: block;	
+		font-size: 1.4rem;
+	}
+
+	.cart__container {
+		
 	}
 
 	.cart__counter {
-		top: 0;
-		right: 0;
-		margin-left: 1rem;
-	}
-
-	
-	
-
+		position: static;
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+	} 
 }
 
+
+@media only screen and (min-width: 1200px) {
+	.nav {
+		width: 70%;
+	}
+	
+}

@@ -99,15 +99,32 @@
 	}
 
 	.watch__type {
-		height: 25rem;
-		/* margin: 3rem 0; */
+		height: 25rem;		
 	}
 }
 
 @media only screen and (min-width: 992px) {
-
 	.watch__type {
 		height: 32rem;
 		
 	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.payment__info {
+		width: 70%;		
+	}
+
+	.hero {		
+		width:70%;		
+	}
+
+	.watch__types {
+		width:70%;		
+	}
+	.watch__type {
+		height: 34rem;
+		
+	}
+	
 }
