@@ -2,6 +2,10 @@
 var slideMenuContainer = document.querySelector('.slide__menu-container');
 var body = document.querySelector('body');
 var menuIndicator = document.querySelector('.menu__indicator');
+var products = document.querySelector('.products');
+
+var root = document.documentElement;
+
 
 var menuSlideFlag = false;
 
@@ -71,4 +75,53 @@ removeClassesFromBars = function() {
 		
 	}
 
+}
+
+getScreenSize = function() {
+	return window.innerWidth;	
+}
+
+
+
+
+
+
+
+var i = 0;
+moveForward = function() {
+	let screenSize = getScreenSize();
+
+	if (screenSize < 768) {
+		i++;
+		console.log("<768: ", i);
+		root.style.setProperty('--index', i);
+		if (i >= 3 ) {
+			i = -1;
+		}
+		
+	} else if (screenSize >= 768 && screenSize < 992) {
+		i++;
+		console.log(">=768: ", i);
+		root.style.setProperty('--index', i);
+
+		if (i >= 2) {
+			i = -1;
+		}
+	} else if (screenSize >= 992 && screenSize < 1200) {
+		i++;
+		console.log(">=992: ", i);
+		root.style.setProperty('--index', i);
+
+		if (i >= 1) {
+			i = -1;
+		}
+		
+	} 
+	
+	
+	
+	
+	
+	
+	
 }

@@ -1,8 +1,8 @@
 
 :root {
-    /* --color-primary: #eb2f64;
-    --color-primary-light: #FF3366;
-    */
+    --n: 4;
+    --index: 0;
+    --main-bg-color: pink;
 }
 
 * {
@@ -27,4 +27,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     
+}
+
+h1, h2, h3, h4, h5, h6, p, span, figure, img, div {
+    padding: 0;
+    margin: 0;
 }
