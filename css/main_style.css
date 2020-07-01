@@ -1,9 +1,11 @@
 
 @import "__base.css";
+@import "__benefits.css";
 @import "__featured-products.css";
 @import "__home.css";
 @import "__layout.css";
 @import "__nav.css";
+@import "__up-to-date.css";
 @import "__slide-menu.css";
 @import "__story.css";
 @import "__quality-info.css";

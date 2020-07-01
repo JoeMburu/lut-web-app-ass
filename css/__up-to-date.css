@@ -1,0 +1,107 @@
+.uptodate-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background: rgb(241, 241, 241);
+    text-align: center;
+}
+
+.uptodate-title {
+    margin: 4rem 0 3rem 0;
+    font-size: 3.4rem;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.social__media {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.social__media p, .news p {
+    font-size: 1.5rem;   
+    line-height: 1.8;
+    color: rgb(209, 208, 208);
+}
+
+.social__media p span, .news p span {
+    display: block;
+}
+
+
+.social__media ul {
+   list-style: none;
+   display: flex;
+   margin: 0.5rem 0 3rem 0;
+}
+
+.social__media ul li {
+    margin: 2rem 1.2rem;
+}
+
+.social__media ul li i {
+    font-size: 2.2rem;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email__field-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    /* border: 1px solid red; */
+    width: 60%;
+    position: relative;
+}
+
+#email {
+   height: 3.8rem; 
+   width: 100%;
+   border-radius: 22px;
+   outline: none;
+   padding-left: 2.8rem;
+   padding-right: 4rem;
+}
+
+.plusBtn {
+    position: absolute;
+    display: inline-block;
+    width: 3rem;
+    right: 3px;
+    top: 4px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) { 
+	.uptodate__media__news-container {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.social__media {
+		flex: 0 0 calc(50%);
+		/* border: 1px solid red; */
+		border-right: 1px solid rgb(158, 156, 156);
+	}
+
+	.news {
+		flex: 0 0 calc(50%);
+		/* border: 1px solid red; */
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.uptodate-container {
+		width: 70%;	
+	}
+
+	.email__field-wrapper {   
+    width: 50%;    
+  }
+	
+}

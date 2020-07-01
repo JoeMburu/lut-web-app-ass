@@ -119,9 +119,17 @@ moveForward = function() {
 	} 
 	
 	
-	
-	
-	
-	
+}
+
+submitForm = function () {
+	event.preventDefault();
+	let query = document.getElementById('email').value;
+	document.getElementById('email').value = '';
+
+	if (query) {
+		let element = document.querySelector('.display p');
+		element.innerHTML = 'Submitted at address: ' + query;
+
+	}
 	
 }
