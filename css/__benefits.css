@@ -1,0 +1,59 @@
+.benefits {
+  margin: 3rem 0;
+}
+
+.benefits-container {
+	width: 95%;
+	margin: 2rem auto;
+}
+
+.secure__payments, .smooth__returns, .shipping {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 6.5rem;
+	background: rgb(238, 238, 238);
+	
+}
+
+.secure__payments, .smooth__returns {
+	margin-bottom: 3rem;
+}
+
+
+.secure__payments img, .smooth__returns img, .shipping img {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 1rem;
+}
+
+.secure__payments span, .smooth__returns span, .shipping span {
+	text-transform: uppercase;
+	font: 1.7rem;
+}
+
+@media only screen and (min-width: 768px) { 
+	.benefits-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.secure__payments, .smooth__returns, .shipping {
+		flex: 0 0 calc(33.33% - 2%);
+		
+	}
+
+	.secure__payments, .smooth__returns {
+		margin-bottom: 0;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.benefits-container {
+    width: 70%;
+	}	
+}
