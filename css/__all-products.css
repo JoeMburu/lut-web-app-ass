@@ -1,0 +1,93 @@
+
+
+.all__products {
+	position: relative;
+	z-index: -1;
+}
+
+
+
+.all__products-container {
+	width: 95%;
+	margin: 3rem auto;	
+}
+
+.all__products-title {
+	font-size: 2.8rem;
+	font-family: 'Frank Ruhl Libre', serif;
+	margin: 2rem 0;
+}
+
+
+
+.all__watch-products {
+	 width: 100%;
+	 display: grid;
+	 grid-template-columns: repeat(2, 1fr);
+	 grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+@media only screen and (min-width: 768px) {
+	.all__watch-products {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(auto-fill, 1fr);
+ }
+}
+
+
+
+.single__product {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	/* transform: translateX(-200%); */
+
+	/* transition: all 10s ease-in 10s; */
+}
+
+.single__product__image-wrapper {
+	height: 20rem;
+	width: 20rem;
+}
+
+.single__product-image {
+	height: 100%;
+	width: 100%;
+}
+
+.single__product-name {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 0.2rem;
+	margin: 1rem 0;
+}
+
+.single__product-price {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.single__product span {
+	position: absolute;
+	right: 8%;
+	top: 10%;
+	color: #fff;
+	background: #000;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.all__products-container {
+		width: 70%;	
+	}
+	
+}
