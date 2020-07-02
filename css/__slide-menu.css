@@ -13,12 +13,67 @@
 	overflow: hidden;
 	transform: translateX(-100%);
 	transition: transform 2s ease-out 0.5s;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 }
+
+.slide__menu-options > li {
+ /* border: 1px solid #fff; */
+ /* text-align: center; */
+	
+}
+
+
+.slide__menu-options li  {
+	margin: 3rem 0;
+}
+
+
+
+.slide__menu-options li a,
+.watches {
+	color: #fff;
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	text-decoration: none;	
+}
+
+.watches__sub {
+	
+}
+
+.watches__sub-toggle {
+	
+}
+
+
+.watches__sub li a {
+	padding-left: 5rem;
+}
+
+.slide__menu-options, 
+.watches__sub {
+	list-style: none;
+}
+
+
+
+
+
+
 
 
 .slide__menu-open-close {
 	transform: translateX(0);
 }
+
+
+
+
+
 
 @media only screen and (min-width: 992px) {
 
@@ -26,7 +81,7 @@
 		/* position: absolute;
 		top: 0; 
 		left: 0;*/
-		 right: 50%;
+		right: 60%;
 		/*bottom: 0;
 		background: #000;
 		height: 100vh;

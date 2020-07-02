@@ -3,11 +3,14 @@ var slideMenuContainer = document.querySelector('.slide__menu-container');
 var body = document.querySelector('body');
 var menuIndicator = document.querySelector('.menu__indicator');
 var products = document.querySelector('.products');
+var watches__sub = document.querySelector('.watches__sub');
 
 var root = document.documentElement;
 
 
 var menuSlideFlag = false;
+var watchesFlag = false;
+
 
 goggleMenu = function (event) {
     if (!menuSlideFlag) {
@@ -131,5 +134,17 @@ submitForm = function () {
 		element.innerHTML = 'Submitted at address: ' + query;
 
 	}
+	
+}
+
+toggleWatches = function () {
+
+	// if (!watchesFlag) {
+	// 	watches__sub.classList.add('watches__sub-toggle');
+	// } else {
+	// 	watches__sub.classList.remove('watches__sub-toggle');
+	// }
+
+	// watchesFlag = !watchesFlag;
 	
 }
