@@ -1,14 +1,14 @@
 
-@import "__all-products.css";
-@import "__base.css";
-@import "__benefits.css";
-@import "__featured-products.css";
-@import "__footer.css";
-@import "__home.css";
-@import "__layout.css";
-@import "__nav.css";
-@import "__up-to-date.css";
-@import "__slide-menu.css";
-@import "__story.css";
-@import "__support.css";
-@import "__quality-info.css";
+@import url("all-products.css");
+@import url("base.css");
+@import url("benefits.css");
+@import url("featured-products.css");
+@import url("footer.css");
+@import url("home.css");
+@import url("layout.css");
+@import url("nav.css");
+@import url("up-to-date.css");
+@import url("slide-menu.css");
+@import url("story.css");
+@import url("support.css");
+@import url("quality-info.css");
